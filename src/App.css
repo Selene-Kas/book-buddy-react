@@ -5,9 +5,10 @@ body {
   padding: 2rem;
   background-color: #f5f5f5;
   text-align: center;
+  color: black;
 }
 nav {
-  background-color: rgb(54, 62, 100);
+  background-color: rgb(45, 51, 81);
   padding: 10px 0;
   display: flex;
   justify-content: flex-end;
@@ -22,8 +23,29 @@ nav ul {
 li a {
   color: white;
   text-decoration: none;
+  text-shadow: 1px 1px 2px black;
 }
 main {
   margin: 0 auto;
+}
+.bookCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+  margin: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px black;
+  transition: box-shadow 300ms;
+  list-style: none;
+}
+img {
+  block-size: 250px;
+}
+#logo-image {
+  width: 30px;
+  margin-right: 10px;
 }
  
