@@ -57,3 +57,19 @@ img {
   transition: box-shadow 300ms;
   list-style: none;
 }
+.regForm {
+  width: 50%;
+  padding-left: 25%;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+input {
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+button {
+  border-radius: 5px;
+  width: 20%;
+}
