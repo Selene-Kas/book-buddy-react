@@ -27,6 +27,7 @@ const SingleBook = () => {
           <li>Description: : {book.description}</li>
           <li>ID: {book.id}</li>
           <li>Available: {book.available}</li>
+          <button> Checkout Book </button>
           <button> Return Book </button>
         </ul>
         ): (
