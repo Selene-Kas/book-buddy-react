@@ -6,7 +6,8 @@ import { useState } from 'react'
 import bookLogo from './assets/books.png'
 
 function App() {
-  const [token, setToken] = useState(null)
+  const [token, setToken] = useState(null);
+  //console.log(token);
   return (
     <>
       <div>
@@ -17,7 +18,7 @@ function App() {
             <Route path="/" element={<Books />} />
             <Route path="/account" element={<Account />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
+            <Route path="/register" element={<Register setToken={setToken}/>} />
             <Route path="/singleBook" element={<SingleBook/>} />
             <Route path="books/:id" element={<SingleBook />} />
           </Routes>
