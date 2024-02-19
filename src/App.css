@@ -44,8 +44,16 @@ main {
 img {
   block-size: 250px;
 }
-#logo-image {
-  width: 30px;
-  margin-right: 10px;
+.singleBook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+  margin: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px black;
+  transition: box-shadow 300ms;
+  list-style: none;
 }
- 
