@@ -26,6 +26,7 @@ export const fetchSingleBook = async (bookId) => {
 
 // fetch for registering a user
 export async function fetchRegister(firstname, lastname, email, password) {
+    try{
     const response = await fetch(`${API_URL}/users/register`, {
         method: "POST",
         headers: {
@@ -41,4 +42,7 @@ export async function fetchRegister(firstname, lastname, email, password) {
     const data = await response.json();
     return data;
     //console.log(data);
+    } catch (err) {
+        console.error(err);
+    } 
 }
