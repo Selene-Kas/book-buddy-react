@@ -66,11 +66,16 @@ img {
 .regForm {
   width: 50%;
   padding-left: 25%;
-  color: white;
-  text-shadow: 1px 1px 2px black;
+  color: black;
+}
+.logForm {
+  width: 50%;
+  padding-left: 25%;
+  color: black;
 }
 input {
   width: 100%;
+  font-size: 1.2em;
   padding: 12px 20px;
   box-sizing: border-box;
   border-radius: 5px;
