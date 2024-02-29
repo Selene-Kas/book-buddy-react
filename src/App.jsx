@@ -6,21 +6,21 @@ import { useState } from 'react'
 import bookLogo from './assets/books.png'
 
 function App() {
-  const [token, setToken] = useState(null);
-  //console.log(token);
+  const [token, setToken] = useState(localStorage.getItem('token'));
+  console.log("Token:", token);
   return (
     <>
       <div>
-        <Navigations />
+        <Navigations token={token}/>
         <main>
         <h1><img id='logo-image' src={bookLogo}/>Library App</h1>
           <Routes>
             <Route path="/" element={<Books />} />
-            <Route path="/account" element={<Account />} />
-            <Route path="/login" element={<Login />} />
+            <Route path="/account" element={<Account token={token} />} />
+            <Route path="/login" element={<Login  setToken={setToken}/>} />
             <Route path="/register" element={<Register setToken={setToken}/>} />
-            <Route path="/singleBook" element={<SingleBook/>} />
             <Route path="books/:id" element={<SingleBook />} />
+            <Route path="/singleBook" element={<SingleBook />} />
           </Routes>
         </main>
       </div>
