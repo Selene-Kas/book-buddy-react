@@ -15,7 +15,6 @@ const Books = () => {
     async function fetchData() {
         const data = await fetchBooks();
         setBooks(data.books);
-        console.log(data.books);
     }
     fetchData();
   }, [])
