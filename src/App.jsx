@@ -7,7 +7,7 @@ import bookLogo from './assets/books.png'
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem('token'));
-  console.log("Token:", token);
+  //console.log("Token:", token);
   return (
     <>
       <div>
