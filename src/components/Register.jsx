@@ -1,5 +1,5 @@
 import { useState } from 'react';
-//import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { fetchRegister } from '../Api';
 
 const Register = ({ setToken }) => {
@@ -7,14 +7,14 @@ const Register = ({ setToken }) => {
     const [lastname, setLastname] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const navigate = useNavigate();
 
     async function handleSubmit(event) {
         event.preventDefault();
         const data = await fetchRegister(firstname, lastname, email, password);
-        //console.log(data);
         if (data.token) {
             setToken(data.token);
-            Navigate('/login');
+            navigate('/login');
         }
     }
 
