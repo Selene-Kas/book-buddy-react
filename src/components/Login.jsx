@@ -11,7 +11,6 @@ const Login = ( {setToken} ) => {
     async function handleLogin(event) {
         event.preventDefault();
         const data = await fetchLogin(email, password);
-        console.log(data);
         if (data.token) {
             localStorage.setItem('token', data.token);
             setToken(data.token);
