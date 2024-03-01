@@ -83,8 +83,11 @@ input {
 button {
   border-radius: 5px;
   width: 120px;
+  background-color: rgb(67, 72, 99);
+  font-size: 15px solid;
+  color: white;
 }
 .searchInput :only-child {
   width: 50%;
-  font-size: 1.5em;
+  font-size: 1.1em;
 }
